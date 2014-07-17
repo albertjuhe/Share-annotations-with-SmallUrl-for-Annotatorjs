@@ -82,8 +82,6 @@ ShareAnnotation.prototype.getSmallURL = function() {
 ShareAnnotation.prototype.onClickShare = function(viewer, annotations) {
   var link_layer = $('ul.annotator-widget > li > div[class^=annotator-hl-]'); //startsWith
   var data = JSON.stringify(viewer.annotations[0]);  
-  var modul_material = this.options.content.modul;
-  var codi_materials = this.options.content.code ;
   var http = this.options.content.http ;
   var hashids = new Hashids("shared_annotations",8);   
   var data = hashids.encrypt(parseInt(viewer.annotations[0].id));
