@@ -32,9 +32,9 @@ Param: http: Host.
 
 ##Usage
 
-After a new annotations, when you read an annotation a button appers in the bottom of the editor, this button allows you to copy a Small URL. After copy this URL you can paste it in the browser and read it in the document, without the edition, update and delete options.
-ShareAnnotation plug in makes a ajax json call to get the annotation using Small URL, 
-for example: when you put in the browser http://localhost:3000/annotation/share/3bK2D8jv, this plugin make a ajax call to http://localhost:3000/annotation/json/annotation/3bK2D8jv nodejs backend, and this return a json object that is parsed for LoadAnnotation.
+After a new annotation, when you read a annotation a button appears in the bottom of the editor, this button allows you to copy a Small URL. After copy this URL you can paste it in the browser and read it in the document, without the edition, update and delete options.
+ShareAnnotation plug in makes an ajax call to get the annotation, in json format, using Small URL, 
+for example: when you put in the browser http://localhost:3000/annotation/share/3bK2D8jv, this plugin make a ajax call to http://localhost:3000/annotation/json/annotation/3bK2D8jv nodejs backend, in my case, and return a json object with the annotations, that is loaded for annotatorjs.
 
 
 
